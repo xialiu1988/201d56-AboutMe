@@ -9,10 +9,10 @@ var positiveAnswers=['y','yes','yeah','ya','sure','absolutely','ofcourse','defin
 var negtiveAnswers=['n','no','nah','nope','np','na','n/a','not really','maybenot','maynot'];
 //question One
 var response1='';
-response1=prompt('Do i speak cantonese? Please Enter Y/N.').toLowerCase();
+response1=prompt('Do i speak cantonese?').toLowerCase();
 while(response1.length===0){
 alert('please enter your answer');
-response1=prompt('Do i speak cantonese? Please Enter Y/N.').toLowerCase();
+response1=prompt('Do i speak cantonese?').toLowerCase();
 }
 var res1=response1.replace(' ','');
 if(positiveAnswers.includes(res1)){
@@ -28,10 +28,10 @@ console.log('Question1:Do i speak cantonese?');
 
 //question two
 var response2='';
-response2=prompt('Do i like seafood? Please Enter Y/N.').toLowerCase();
+response2=prompt('Do i like seafood?').toLowerCase();
 while(response2.length===0){
     alert('please enter your answer');
-    response2=prompt('Do i like seafood?Please Enter Y/N.').toLowerCase();
+    response2=prompt('Do i like seafood?').toLowerCase();
 }
 var res2=response2.replace(' ','');
 if(positiveAnswers.includes(res2)){
@@ -47,10 +47,10 @@ console.log('Question2:Do i like seafood?');
 
 //question three
 var response3='';
-response3=prompt('Do i like cats? Please Enter Y/N.').toLowerCase();
+response3=prompt('Do i like cats?').toLowerCase();
 while(response3.length===0){
     alert('please enter your answer');
-    response3=prompt('Do i like cats? Please Enter Y/N.').toLowerCase();
+    response3=prompt('Do i like cats?').toLowerCase();
 }
 var res3=response3.replace(' ','');
 if(positiveAnswers.includes(res3)){
@@ -66,10 +66,10 @@ console.log('Question3:Do i like cats?');
 
 //question four
 var response4='';
-response4=prompt('Do i live in seattle? Please Enter Y/N.').toLowerCase();
+response4=prompt('Do i live in seattle?').toLowerCase();
 while(response4.length==0){
     alert('please enter your answer');
-    response4=prompt('Do i live in seattle? Please Enter Y/N.').toLowerCase();
+    response4=prompt('Do i live in seattle?').toLowerCase();
 }
 var res4=response4.replace(' ','');
 if(positiveAnswers.includes(res4)){
@@ -85,10 +85,10 @@ console.log('Question4:Do i live in seattle?');
 
 //question five
 var response5='';
-response5=prompt('Do i like hiking? Please Enter Y/N.').toLowerCase();
+response5=prompt('Do i like hiking?').toLowerCase();
 while(response5.length===0){
     alert('please enter your answer');
-    response5=prompt('Do i like hiking? Please Enter Y/N.').toLowerCase();
+    response5=prompt('Do i like hiking?').toLowerCase();
 }
 var res5=response5.replace(' ','');
 if(positiveAnswers.includes(res5)){
