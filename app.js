@@ -1,18 +1,24 @@
 'use strict';
 var userName=prompt('what is your name?');
+while(userName===''){
+    alert('please provide a name!');
+    var userName=prompt('what is your name?');
+}
 alert('Welcome! '+userName+'!'+' '+'Let\'s play a guessing game! Here are 5 questions total.');
+var positiveAnswers=['y','yes','yeah','ya','sure','absolutely','ofcourse','definitely','ithinkso','ibet','yup','yep'];
+var negtiveAnswers=['n','no','nah','nope','np','na','n/a','not really','maybenot','maynot'];
 //question One
 var response1='';
 response1=prompt('Do i speak cantonese? Please Enter Y/N.').toLowerCase();
-while(response1.length==0){
+while(response1.length===0){
 alert('please enter your answer');
 response1=prompt('Do i speak cantonese? Please Enter Y/N.').toLowerCase();
 }
-
-if(response1==='y'||response1==='yes'){
+var res1=response1.replace(' ','');
+if(positiveAnswers.includes(res1)){
     alert('Yes. I can speak cantonese.');
 }
-else if(response1==='n'||response1==='no'){
+else if(negtiveAnswers.includes(res1)){
     alert('No,I actually can speak cantonese.');
 }
 else{
@@ -23,14 +29,15 @@ console.log('Question1:Do i speak cantonese?');
 //question two
 var response2='';
 response2=prompt('Do i like seafood? Please Enter Y/N.').toLowerCase();
-while(response2.length==0){
+while(response2.length===0){
     alert('please enter your answer');
     response2=prompt('Do i like seafood?Please Enter Y/N.').toLowerCase();
 }
-if(response2==='y'||response2==='yes'){
+var res2=response2.replace(' ','');
+if(positiveAnswers.includes(res2)){
     alert('Yes. You are right.');
 }
-else if(response2==='n'||response2==='no'){
+else if(negtiveAnswers.includes(res2)){
     alert('Not correct answer.');
 }
 else{
@@ -41,14 +48,15 @@ console.log('Question2:Do i like seafood?');
 //question three
 var response3='';
 response3=prompt('Do i like cats? Please Enter Y/N.').toLowerCase();
-while(response3.length==0){
+while(response3.length===0){
     alert('please enter your answer');
     response3=prompt('Do i like cats? Please Enter Y/N.').toLowerCase();
 }
-if(response3==='y'||response3==='yes'){
+var res3=response3.replace(' ','');
+if(positiveAnswers.includes(res3)){
     alert('Yes. who would not like cats!');
 }
-else if(response3==='n'||response3==='no'){
+else if(negtiveAnswers.includes(res3)){
     alert('Not correct answer.');
 }
 else{
@@ -63,10 +71,11 @@ while(response4.length==0){
     alert('please enter your answer');
     response4=prompt('Do i live in seattle? Please Enter Y/N.').toLowerCase();
 }
-if(response4==='y'||response4==='yes'){
+var res4=response4.replace(' ','');
+if(positiveAnswers.includes(res4)){
     alert('No,not a correct answer');
 }
-else if(response4==='n'||response4==='no'){
+else if(negtiveAnswers.includes(res4)){
     alert('Correct, i don\'t live here');
 }
 else{
@@ -77,14 +86,15 @@ console.log('Question4:Do i live in seattle?');
 //question five
 var response5='';
 response5=prompt('Do i like hiking? Please Enter Y/N.').toLowerCase();
-while(response5.length==0){
+while(response5.length===0){
     alert('please enter your answer');
     response5=prompt('Do i like hiking? Please Enter Y/N.').toLowerCase();
 }
-if(response5==='y'||response5==='yes'){
+var res5=response5.replace(' ','');
+if(positiveAnswers.includes(res5)){
     alert('Yes, i like hiking.');
 }
-else if(response5==='n'||response5==='no'){
+else if(negtiveAnswers.includes(res5)){
     alert('No, not correct answer');
 }
 else{
