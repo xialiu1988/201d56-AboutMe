@@ -1,0 +1,73 @@
+body{
+ background-image: url(./seattle.jpg);
+ background-size: cover;
+ background-position: top left;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    font-style: oblique;
+    color:transparent;
+    text-shadow: .04em .04em 0 #9cb8b3;
+    -webkit-text-stroke:2px #1d0e16;
+}
+
+h2{
+    color:rgb(202, 136, 195);
+
+}
+#personalinfo{
+    text-align: right;
+    margin-right:80px;
+}
+
+#alien{
+    text-align: right;
+    color:rgb(255, 255, 255);
+    font-style: italic;
+    margin-left:640px;
+    margin-right: 80px;
+    border:1px solid rgba(238, 238, 245, 0.774);
+    word-wrap:break-word; width:200px；
+
+}
+
+#ed{
+    text-align: right;
+    margin-right: 80px;
+}
+
+.background{
+   
+    color:rgb(255, 255, 255);
+    margin-left:180px;
+    margin-right:80px;
+    margin-bottom: 80px;
+    border:1px solid rgb(148, 219, 236);
+}
+
+#workep{
+    margin-left: 40px;
+}
+.wk{
+    color:rgb(255, 255, 255);
+    margin-left:40px;
+    margin-right:420px;
+    border:1px solid rgb(148, 219, 236);
+}
+#whtlike{
+    margin-left: 40px;
+}
+
+.like{
+    color:rgb(255, 255, 255);
+    margin-left:40px;
+    margin-right:414px;
+    margin-bottom: 40px;
+   border:1px solid rgb(148, 219, 236);  
+}
+ul,ol {
+    list-style-type: none;
+  }
