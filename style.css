@@ -70,9 +70,9 @@ h2{
     border:1px solid rgb(148, 219, 236);  
 }
 
-ul,ol {
+/* ul,ol {
     list-style-type:none;
-}
+} */
 
 footer{
     color:rgb(255, 255, 255);
