@@ -109,14 +109,15 @@ var response6=prompt('How many times i have been to Disneyland');
 var guessingNum=0;
 while(parseInt(response6)!==3&& guessingNum<3){
   if(parseInt(response6)>3){
-    alert('too high');
+    alert('too high, you have '+ (3-guessingNum)+' more chances');
   }
   else if(parseInt(response6)<3){
-    alert('too low');
+    alert('too low, you have '+ (3-guessingNum)+' more chances');
   }
   else{
-    alert('please enter a number');
+    alert('please enter a number. You have '+(3-guessingNum)+' more chances');
   }
+  
   response6=prompt('How many times i have been to Disneyland');
   guessingNum++;
 }
@@ -135,7 +136,7 @@ var response7=prompt('what fruit i like');
 var possibleAnswer=['apple','strawberry','dragonfruit','watermelon'];
 var attemptNum=0;
 while(!possibleAnswer.includes(response7.toLowerCase())&&attemptNum<5){
-  alert('nope i like red color fruits');
+  alert('nope i like red color fruits and you have '+(5-attemptNum)+' more chances');
   response7=prompt('what fruit i like');
   attemptNum++;
 }
