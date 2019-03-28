@@ -170,5 +170,18 @@ function questionSeven ()
   }
 }
 console.log('Question7:what fruit i like');
+
+function main ()
+{
+  questionOne();
+  questionTwo();
+  questionThree();
+  questionFour();
+  questionFive();
+  questionSix();
+  questionSeven();
+}
+
+main();
 alert(userName+', You got '+score+' out of 7 questions correct!');
 
