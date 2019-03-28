@@ -134,7 +134,6 @@ function questionSix ()
     else{
       alert('please enter a number. You have '+(3-guessingNum)+' more chances');
     }
-    
     response6=prompt('How many times i have been to Disneyland');
     guessingNum++;
   }
