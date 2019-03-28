@@ -32,21 +32,24 @@ function questionOne ()
 console.log('Question1:Do i speak cantonese?');
 
 //question two
-var response2=prompt('Do i like seafood?');
-while(!response2){
-  alert('please enter your answer');
-  response2=prompt('Do i like seafood?');
-}
-var res2=response2.toLowerCase().replace(' ','');
-if(positiveAnswers.includes(res2)){
-  alert('Yes. You are right.');
-  score++;
-}
-else if(negtiveAnswers.includes(res2)){
-  alert('Not correct answer.');
-}
-else{
-  alert('looks like you don\'t enter Y/N.' );
+function questionTwo ()
+{
+  var response2=prompt('Do i like seafood?');
+  while(!response2){
+    alert('please enter your answer');
+    response2=prompt('Do i like seafood?');
+  }
+  var res2=response2.toLowerCase().replace(' ','');
+  if(positiveAnswers.includes(res2)){
+    alert('Yes. You are right.');
+    score++;
+  }
+  else if(negtiveAnswers.includes(res2)){
+    alert('Not correct answer.');
+  }
+  else{
+    alert('looks like you don\'t enter Y/N.' );
+  }
 }
 console.log('Question2:Do i like seafood?');
 
