@@ -10,21 +10,24 @@ var positiveAnswers=['y','yes','yeah','ya','sure','absolutely','ofcourse','defin
 var negtiveAnswers=['n','no','nah','nope','np','na','n/a','not really','maybenot','maynot'];
 
 //question One
-var response1=prompt('Do i speak cantonese?');
-while(!response1){
-  alert('please enter your answer');
-  response1=prompt('Do i speak cantonese?');
-}
-var res1=response1.toLowerCase().replace(' ','');
-if(positiveAnswers.includes(res1)){
-  alert('Yes. I can speak cantonese.');
-  score++;
-}
-else if(negtiveAnswers.includes(res1)){
-  alert('No,I actually can speak cantonese.');
-}
-else{
-  alert('looks like you don\'t enter Y/N.' );
+function questionOne ()
+{
+  var response1=prompt('Do i speak cantonese?');
+  while(!response1){
+    alert('please enter your answer');
+    response1=prompt('Do i speak cantonese?');
+  }
+  var res1=response1.toLowerCase().replace(' ','');
+  if(positiveAnswers.includes(res1)){
+    alert('Yes. I can speak cantonese.');
+    score++;
+  }
+  else if(negtiveAnswers.includes(res1)){
+    alert('No,I actually can speak cantonese.');
+  }
+  else{
+    alert('looks like you don\'t enter Y/N.' );
+  }
 }
 console.log('Question1:Do i speak cantonese?');
 
