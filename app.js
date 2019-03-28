@@ -76,21 +76,24 @@ function questionThree ()
 console.log('Question3:Do i like cats?');
 
 //question four
-var response4=prompt('Do i live in seattle?');
-while(!response4){
-  alert('please enter your answer');
-  response4=prompt('Do i live in seattle?');
-}
-var res4=response4.toLowerCase().replace(' ','');
-if(positiveAnswers.includes(res4)){
-  alert('No,not a correct answer');
-}
-else if(negtiveAnswers.includes(res4)){
-  alert('Correct, i don\'t live here');
-  score++;
-}
-else{
-  alert('looks like you don\'t enter Y/N.' );
+function questionFour ()
+{
+  var response4=prompt('Do i live in seattle?');
+  while(!response4){
+    alert('please enter your answer');
+    response4=prompt('Do i live in seattle?');
+  }
+  var res4=response4.toLowerCase().replace(' ','');
+  if(positiveAnswers.includes(res4)){
+    alert('No,not a correct answer');
+  }
+  else if(negtiveAnswers.includes(res4)){
+    alert('Correct, i don\'t live here');
+    score++;
+  }
+  else{
+    alert('looks like you don\'t enter Y/N.' );
+  }
 }
 console.log('Question4:Do i live in seattle?');
 
