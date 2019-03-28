@@ -54,21 +54,24 @@ function questionTwo ()
 console.log('Question2:Do i like seafood?');
 
 //question three
-var response3=prompt('Do i like cats?');
-while(!response3){
-  alert('please enter your answer');
-  response3=prompt('Do i like cats?');
-}
-var res3=response3.toLowerCase().replace(' ','');
-if(positiveAnswers.includes(res3)){
-  alert('Yes. who would not like cats!');
-  score++;
-}
-else if(negtiveAnswers.includes(res3)){
-  alert('Not correct answer.');
-}
-else{
-  alert('looks like you don\'t enter Y/N.' );
+function questionThree ()
+{
+  var response3=prompt('Do i like cats?');
+  while(!response3){
+    alert('please enter your answer');
+    response3=prompt('Do i like cats?');
+  }
+  var res3=response3.toLowerCase().replace(' ','');
+  if(positiveAnswers.includes(res3)){
+    alert('Yes. who would not like cats!');
+    score++;
+  }
+  else if(negtiveAnswers.includes(res3)){
+    alert('Not correct answer.');
+  }
+  else{
+    alert('looks like you don\'t enter Y/N.' );
+  }
 }
 console.log('Question3:Do i like cats?');
 
