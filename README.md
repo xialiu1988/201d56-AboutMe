@@ -1,6 +1,7 @@
 # 201d56-AboutMe
 
 # A personal website to let users know about me
+AUTHOR: I, Charles, assisted Xia on this site as a driver. She treated me fairly.
 
 - when user first comes to the site will see a window to ask user's name
 
